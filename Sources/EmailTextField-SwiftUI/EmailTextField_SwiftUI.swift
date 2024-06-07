@@ -10,14 +10,24 @@ extension String {
 @available(iOS 17, macOS 14, *)
 public struct EmailTextField: View {
     
-    public var placeholderText: String
+    var placeholderText: String
     var invalidEmailMessage: String = "Please enter valid email"
     
-    @Binding public var text: String
+    @Binding var text: String
     @FocusState var isTextFieldFocused: Bool
     @State private var isValidEmail: Bool = true
     var showIcon: Bool = true
     var textfieldBGColor: Color = .white
+    
+    public init(placeholderText: String, invalidEmailMessage: String, text: String, isTextFieldFocused: Bool, isValidEmail: Bool, showIcon: Bool, textfieldBGColor: Color) {
+        self.placeholderText = placeholderText
+        self.invalidEmailMessage = invalidEmailMessage
+        self.text = text
+        self.isTextFieldFocused = isTextFieldFocused
+        self.isValidEmail = isValidEmail
+        self.showIcon = showIcon
+        self.textfieldBGColor = textfieldBGColor
+    }
     
     public var body: some View {
         VStack(alignment: .leading) {
