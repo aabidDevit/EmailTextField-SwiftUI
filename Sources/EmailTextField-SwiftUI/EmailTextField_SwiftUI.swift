@@ -7,7 +7,7 @@ extension String {
         NSPredicate(format: "SELF MATCHES %@", "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}").evaluate(with: self)
     }
 }
-@available(iOS 15, macOS 14, *)
+@available(iOS 17, macOS 14, *)
 struct EmailTextField: View {
     
     var placeholderText: String
@@ -65,7 +65,7 @@ struct EmailTextField: View {
     }
 }
 
-@available(iOS 15, macOS 14, *)
+@available(iOS 17, macOS 14, *)
 #Preview {
     EmailTextField(placeholderText: "Username or Email", text: .constant(""))
 }
