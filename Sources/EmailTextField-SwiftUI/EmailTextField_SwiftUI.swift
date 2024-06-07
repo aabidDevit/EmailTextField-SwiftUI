@@ -19,7 +19,7 @@ public struct EmailTextField: View {
     var showIcon: Bool = true
     var textfieldBGColor: Color = .white
     
-    public init(placeholderText: String, invalidEmailMessage: String = "Please enter valid email", text: Binding<String>, isTextFieldFocused: Bool = false, isValidEmail: Bool = true, showIcon: Bool = true, textfieldBGColor: Color = .gray) {
+    public init(placeholderText: String, invalidEmailMessage: String = "Please enter valid email", text: Binding<String>, isTextFieldFocused: Bool = false, isValidEmail: Bool = true, showIcon: Bool = true, textfieldBGColor: Color = .white) {
         self.placeholderText = placeholderText
         self.invalidEmailMessage = invalidEmailMessage
         self._text = text
