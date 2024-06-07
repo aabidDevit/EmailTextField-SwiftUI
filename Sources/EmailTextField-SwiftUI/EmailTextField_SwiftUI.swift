@@ -75,8 +75,8 @@ public struct EmailTextField: View {
     }
 }
 
-@available(iOS 17, macOS 14, *)
-#Preview {
-    EmailTextField(placeholderText: "Username or Email", text: .constant(""))
-}
+//@available(iOS 17, macOS 14, *)
+//#Preview {
+//    EmailTextField(placeholderText: "Username or Email", text: .constant(""))
+//}
 
