@@ -8,7 +8,7 @@ extension String {
     }
 }
 @available(iOS 17, macOS 14, *)
-struct EmailTextField: View {
+public struct EmailTextField: View {
     
     var placeholderText: String
     var invalidEmailMessage: String = "Please enter valid email"
@@ -19,7 +19,7 @@ struct EmailTextField: View {
     var showIcon: Bool = true
     var textfieldBGColor: Color = .white
     
-    var body: some View {
+    public var body: some View {
         VStack(alignment: .leading) {
             HStack(spacing: 0) {
                 if showIcon {
