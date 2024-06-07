@@ -10,10 +10,10 @@ extension String {
 @available(iOS 17, macOS 14, *)
 public struct EmailTextField: View {
     
-    var placeholderText: String
+    public var placeholderText: String
     var invalidEmailMessage: String = "Please enter valid email"
     
-    @Binding var text: String
+    @Binding public var text: String
     @FocusState var isTextFieldFocused: Bool
     @State private var isValidEmail: Bool = true
     var showIcon: Bool = true
